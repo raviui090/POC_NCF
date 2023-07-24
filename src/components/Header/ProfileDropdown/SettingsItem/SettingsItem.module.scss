@@ -1,0 +1,30 @@
+.settingsItem {
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: background-color .1s ease-in;
+    position: relative;
+
+    &:hover {
+        background-color: var(--dropdown-item-hover);
+    }
+}
+
+.aditional {
+    >p {
+        color: #0B1B2399;
+    }
+
+    .icon>svg>path {
+        fill-opacity: 0.6;
+        stroke-opacity: 0.6;
+    }
+}
+
+.themeToggle {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}

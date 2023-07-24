@@ -1,0 +1,30 @@
+.wrapper {
+    padding: 32px;
+}
+
+.primary,
+.secondary {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.primary {
+    margin-bottom: 32px;
+}
+
+.secondary {
+    padding-top: 32px;
+    border-top: 1px solid #D8DDE0;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

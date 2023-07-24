@@ -1,0 +1,27 @@
+.container {
+    margin: 32px 0 24px;
+    display: flex;
+    gap: 32px;
+}
+
+.leftSide,
+.rightSide {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.leftSide {
+    width: calc(67.6% - 16px);
+}
+
+.rightSide {
+    width: calc(32.4% - 16px);
+}
+
+.buttons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}

@@ -1,0 +1,103 @@
+.button {
+    border-radius: 48px;
+    display: grid;
+    place-items: center;
+    width: fit-content;
+    transition: .2s ease-in;
+    position: relative;
+    transition-property: border-color,
+        background-color;
+
+    &.large {
+        padding: 13.5px 20px;
+    }
+
+    &.small {
+        padding: 6px 20px;
+    }
+
+    &.icon {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &.primary {
+        background-color: var(--blue-color);
+
+        >.text {
+            color: var(--white-color);
+        }
+
+        &:hover {
+            background-color: #61BAD8;
+        }
+
+        &.disabled {
+            background-color: #BEC9D6;
+        }
+
+        &.icon {
+            svg>path {
+                fill: var(--white-color);
+            }
+        }
+    }
+
+    &.secondary {
+        background-color: transparent;
+        border: 1px solid #D8DDE0;
+
+        >.text {
+            color: var(--blue-color);
+        }
+
+        &.disabled>.text {
+            color: var(--text-grey-color);
+        }
+
+        &:hover {
+            border-color: var(--blue-color);
+        }
+
+        &.icon {
+            svg>path {
+                fill: var(--blue-color);
+            }
+        }
+    }
+
+    &.ghost {
+        padding: 0;
+        height: fit-content;
+
+        .text {
+            color: var(--blue-color);
+        }
+
+        &:hover {
+
+            .text {
+                color: #61BAD8;
+            }
+
+            svg>path {
+                stroke: #61BAD8;
+            }
+        }
+    }
+
+    &.disabled {
+        pointer-events: none;
+        user-select: none;
+    }
+}
+
+.text {
+    white-space: nowrap;
+    transition: color .2s ease-in;
+}
+
+.iconWrapper>svg>path {
+    fill-opacity: 1;
+}

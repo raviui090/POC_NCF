@@ -1,0 +1,21 @@
+.wrapper {
+    background-color: var(--white-color);
+    height: 100vh;
+    padding: 40px 12px;
+    max-width: 184px;
+    display: flex;
+    flex-direction: column;
+
+    >:last-child {
+        padding: 6px 27.5px;
+        margin-top: auto;
+        align-self: center;
+    }
+}
+
+.logo {
+    margin-left: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

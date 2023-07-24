@@ -1,4 +1,4 @@
-import * as React from 'react';;
+import * as React from 'react';
 import GrantPageTabs from "../../components/GrantPageTabs";
 import styles from "./GrantPage.module.scss";
 import UserBalanceDisplay from "../../components/UserBalanceDisplay";

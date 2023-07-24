@@ -14,10 +14,16 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### `npm run cypress:open`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This wil launch the test runner in the interactive watch mode.
+
+Cypress test cases are end to end tested.
+
+Note: localhost should be in running mode, while we test the cypress test cases.
+
+See the section about (https://www.cypress.io/) for more information.
+
 
 ### `npm run build`
 
